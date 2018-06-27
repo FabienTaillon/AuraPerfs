@@ -1,0 +1,12 @@
+<aura:component controller="ChildApexCtrl">
+    <aura:attribute name="myList" type="String[]" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <lightning:select name="MyPicklist" label="My Picklist">
+        <aura:iteration items="{!v.myList}" var="listItem">
+            <option value="{!listItem}">{!listItem}</option>
+        </aura:iteration>
+    </lightning:select>
+
+</aura:component>

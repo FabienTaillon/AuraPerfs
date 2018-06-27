@@ -1,0 +1,11 @@
+{
+    "orgName": "Aura",
+    "edition": "Developer",
+    "country": "US",
+    "language": "en",
+    "features": ["ExpandedSourceTracking"],
+    "orgPreferences" : {
+        "enabled": ["S1DesktopEnabled"],
+        "disabled": ["S1EncryptedStoragePref2"]
+    }
+}

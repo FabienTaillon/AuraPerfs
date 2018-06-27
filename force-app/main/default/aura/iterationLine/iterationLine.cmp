@@ -1,0 +1,10 @@
+<aura:component>
+    
+    <aura:attribute name="beer" type="String"/>
+
+    <aura:handler name="render" value="{!this}" action="{!c.onRender}"/>
+
+    <lightning:icon iconName="custom:custom56" class="slds-m-right_medium"/>
+    <!--<lightning:icon src="{!$Resource.beer + '#beer'}" class="slds-m-right_medium" size="x-small"/>-->
+    {!v.beer}
+</aura:component>

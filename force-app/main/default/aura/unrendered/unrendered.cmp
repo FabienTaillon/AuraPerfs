@@ -1,0 +1,11 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:appHostable" access="global" >
+    <aura:attribute name="visible" type="Boolean" default="true"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <c:myCard value="The one from Bordeaux is awesome"/>
+
+    <aura:if isTrue="{!v.visible}">
+        <c:myCard value="The one from Paris is great too"/>
+    </aura:if>
+</aura:component>
