@@ -10,6 +10,7 @@
         }
         else {
             component.set("v.beers", ukList);
+            //component.set("v.beers", frList);
         }
     },
     
