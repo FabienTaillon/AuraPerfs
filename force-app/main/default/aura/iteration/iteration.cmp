@@ -1,5 +1,6 @@
 <aura:component implements="flexipage:availableForAllPageTypes,force:appHostable" access="global">
     <aura:attribute name="beers" type="List" default="[ 'Leffe', 'Brooklyn Lager', 'Parisis' ]" />
+    <aura:attribute name="beer" type="String" default="" />
 
     <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
     
@@ -14,5 +15,6 @@
 
         </ul>
         <lightning:button variant="brand" label="Update List" onclick="{!c.changeList}" class="slds-m-top_medium" />
+        <!--<lightning:input type="text" name="beer2" label="Beer 2" value="{!v.beer}" />-->
     </div>
 </aura:component>

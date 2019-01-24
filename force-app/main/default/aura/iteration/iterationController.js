@@ -16,5 +16,6 @@
     
     changeList : function(component, event, helper) {
       component.set('v.beers', [ 'Brooklyn', 'Anchor', 'Sierra Nevada' ]);
+      //component.set('v.beers.1', component.get('v.beer'));
     }
 })
